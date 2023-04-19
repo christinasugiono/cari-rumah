@@ -1,0 +1,20 @@
+.new-property__controls {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.new-property__control {
+  @apply flex items-center mb-2;
+}
+
+.new-property__control input {
+  flex-grow: 1;
+}
+
+.button-primary {
+  @apply bg-blue-500 px-4 py-2 rounded text-white;
+}
+
+.button-reset {
+  @apply px-4 py-2 rounded underline decoration-red-500 text-red-500;
+}
