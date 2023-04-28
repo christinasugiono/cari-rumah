@@ -1,20 +1,53 @@
-.new-property__controls {
-  width: 50%;
-  margin: 0 auto;
+.form-control {
+  @apply my-4;
 }
 
-.new-property__control {
-  @apply flex items-center mb-2;
+.form-control__input {
+  @apply flex items-center mt-2;
 }
 
-.new-property__control input {
-  flex-grow: 1;
+.form-control__input input {
+  @apply flex-1 rounded w-full h-10 bg-secondary px-3;
+  height: 47px;
 }
 
-.button-primary {
-  @apply bg-blue-500 px-4 py-2 rounded text-white;
+.cards {
+  @apply grid w-full gap-3 grid-cols-3 mt-3;
 }
 
-.button-reset {
-  @apply px-4 py-2 rounded underline decoration-red-500 text-red-500;
+.half-view {
+  @apply grid w-full gap-x-3 grid-cols-2;
+}
+
+.type-card {
+  @apply h-28 inline-flex items-end justify-between w-full p-3 text-white bg-secondary rounded cursor-pointer;
+}
+
+#type-house:checked {
+  @apply bg-primary;
+}
+
+#type-land:checked {
+  @apply bg-primary;
+}
+
+.type-card img {
+  @apply mb-2;
+  height: 32px;
+}
+
+.form-actions {
+  @apply flex flex-col mt-8;
+}
+
+.btn {
+  @apply w-full p-3 rounded;
+}
+
+.btn-primary {
+  @apply bg-primary;
+}
+
+.btn-secondary {
+  @apply bg-transparent border border-white box-border;
 }

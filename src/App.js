@@ -1,4 +1,4 @@
-import PropertyForm from "./components/NewProperty/PropertyForm";
+import NewProperty from "./components/NewProperty/NewProperty";
 
 const DUMMY_SETTINGS = {
   area: "Kedungu",
@@ -11,10 +11,7 @@ const DUMMY_SETTINGS = {
 
 function App() {
   return (
-    <div>
-      <h1>Hitung rumah anda</h1>
-      <PropertyForm/>
-    </div>
+    <NewProperty/>
   );
 }
 
